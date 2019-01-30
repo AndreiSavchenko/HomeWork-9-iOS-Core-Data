@@ -13,6 +13,23 @@ class FurnitureViewController: UIViewController {
     
     @IBOutlet weak var furnitureTableView: UITableView!
     
+    private lazy var context = CoreDataStack.shared.persistentContainer.viewContext
+    
+    private lazy var fetchedResultsController: NSFetchedResultsController<Furniture> = {
+        let fetchRequest: NSFetchRequest<Furniture> = Furniture.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        let controller = NSFetchedResultsController<Furniture>(
+            fetchRequest: fetchRequest,
+            managedObjectContext: context,
+            sectionNameKeyPath: nil,
+            cacheName: nil
+        )
+        controller.delegate = self
+        try? controller.performFetch()
+        return controller
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,20 +46,19 @@ class FurnitureViewController: UIViewController {
         self.navigationController?.pushViewController(addFurnitureViewController, animated: true)
     }
 
-    private lazy var context = CoreDataStack.shared.persistentContainer.viewContext
     
-    var furniture = Furniture.fetchAll() {
-            didSet {
-                furnitureTableView.reloadData()
-            }
-    }
+//    var furniture = Furniture.fetchAll() {
+//            didSet {
+//                furnitureTableView.reloadData()
+//            }
+//    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? AddFurnitureViewController {
-            vc.furniture = sender as? [Furniture] ?? []
-            print("11111")
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let vc = segue.destination as? AddFurnitureViewController {
+//            vc.furniture = sender as? [Furniture] ?? []
+//            print("11111")
+//        }
+//    }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if segue.identifier == "segueAddFurniture" {
@@ -60,17 +76,17 @@ class FurnitureViewController: UIViewController {
 extension FurnitureViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("furniture.count = \(furniture.count)")
-        return furniture.count
+//        print("furniture.count = \(furniture.count)")
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = furnitureTableView.dequeueReusableCell(withIdentifier: FurnitureXibTableViewCell.reuseIdentifier, for: indexPath)
-        (cell as? FurnitureXibTableViewCell)?.titleLabel.text = furniture[indexPath.row].title
-        (cell as? FurnitureXibTableViewCell)?.priceLabel.text = String(furniture[indexPath.row].price)
+        (cell as? FurnitureXibTableViewCell)?.titleLabel.text = fetchedResultsController.fetchedObjects?[indexPath.row].title
+        (cell as? FurnitureXibTableViewCell)?.priceLabel.text = String(fetchedResultsController.fetchedObjects?[indexPath.row].price ?? 0)
         return cell
     }
+
 }
 
 

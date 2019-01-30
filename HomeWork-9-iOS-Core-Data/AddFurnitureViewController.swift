@@ -11,7 +11,7 @@ import UIKit
 class AddFurnitureViewController: UIViewController {
 
     private lazy var context = CoreDataStack.shared.persistentContainer.viewContext
-    var furniture = Furniture.fetchAll()
+    //var furniture = Furniture.fetchAll()
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var brandTextField: UITextField!
@@ -32,11 +32,11 @@ class AddFurnitureViewController: UIViewController {
         guard let quantity = quantityTextField.text else { return }
         object.quantity = Int32(quantity) ?? 0
         try? context.save()
-        self.furniture = Furniture.fetchAll()
+        //self.furniture = Furniture.fetchAll()
         
         print("add Furniture button")
-        print("furniture.count = \(furniture.count)")
-        print("furniture = \(furniture)")
+//        print("furniture.count = \(furniture.count)")
+//        print("furniture = \(furniture)")
         self.navigationController?.popViewController(animated: true)
     }
     
