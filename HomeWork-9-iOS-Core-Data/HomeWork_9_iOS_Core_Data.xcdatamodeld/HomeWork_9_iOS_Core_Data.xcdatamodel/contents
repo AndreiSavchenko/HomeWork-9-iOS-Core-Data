@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cart" representedClassName="Cart" syncable="YES">
+        <relationship name="furnitures" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Furniture" inverseName="cart" inverseEntity="Furniture" syncable="YES"/>
+    </entity>
+    <entity name="Furniture" representedClassName="Furniture" syncable="YES">
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="material" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cart" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Cart" inverseName="furnitures" inverseEntity="Cart" syncable="YES"/>
+        <relationship name="roomCategory" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="RoomCategory" inverseName="furnitures" inverseEntity="RoomCategory" syncable="YES"/>
+    </entity>
+    <entity name="RoomCategory" representedClassName="RoomCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="furnitures" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Furniture" inverseName="roomCategory" inverseEntity="Furniture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Furniture" positionX="-54" positionY="-9" width="128" height="163"/>
+        <element name="Cart" positionX="138.875" positionY="-6.96484375" width="128" height="58"/>
+        <element name="RoomCategory" positionX="139.1875" positionY="80.796875" width="128" height="73"/>
+    </elements>
+</model>
