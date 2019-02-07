@@ -1,20 +1,18 @@
 //
-//  FurnitureXibTableViewCell.swift
+//  RoomCategoryXibTableViewCell.swift
 //  HomeWork-9-iOS-Core-Data
 //
-//  Created by Alla on 1/27/19.
+//  Created by Alla on 2/5/19.
 //  Copyright © 2019 AndreiSavchenko. All rights reserved.
 //
 
 import UIKit
 
-class FurnitureXibTableViewCell: UITableViewCell {
+class RoomCategoryXibTableViewCell: UITableViewCell {
 
-    static let reuseIdentifier: String = "FurnitureCell"
-    
-    @IBOutlet weak var furnitureImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
+    static let reuseIdentifier: String = "RoomCategoryCell"
+    @IBOutlet weak var roomCategoryImageView: UIImageView!
+    @IBOutlet weak var nameRoomLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

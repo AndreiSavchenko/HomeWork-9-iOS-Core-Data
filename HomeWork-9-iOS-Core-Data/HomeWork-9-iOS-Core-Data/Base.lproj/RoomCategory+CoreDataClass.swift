@@ -13,4 +13,11 @@ import CoreData
 @objc(RoomCategory)
 public class RoomCategory: NSManagedObject {
 
+    class func fetchAll(from context: NSManagedObjectContext = CoreDataStack.shared.persistentContainer.viewContext) -> [RoomCategory] {
+        let request: NSFetchRequest<RoomCategory> = fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        let roomCategory = try? context.fetch(request)
+        return roomCategory ?? []
+    }
+    
 }

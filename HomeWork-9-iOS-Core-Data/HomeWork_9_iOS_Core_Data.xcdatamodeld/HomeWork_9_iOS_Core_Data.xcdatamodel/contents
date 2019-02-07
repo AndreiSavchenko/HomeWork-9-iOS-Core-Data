@@ -18,8 +18,8 @@
         <relationship name="furnitures" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Furniture" inverseName="roomCategory" inverseEntity="Furniture" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Furniture" positionX="-54" positionY="-9" width="128" height="163"/>
         <element name="Cart" positionX="138.875" positionY="-6.96484375" width="128" height="58"/>
+        <element name="Furniture" positionX="-54" positionY="-9" width="128" height="165"/>
         <element name="RoomCategory" positionX="139.1875" positionY="80.796875" width="128" height="73"/>
     </elements>
 </model>

@@ -20,11 +20,17 @@
 		4D0D70DA21FBD14500FF9FBF /* Cart+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70D121FBD14500FF9FBF /* Cart+CoreDataProperties.swift */; };
 		4D0D70DB21FBD14500FF9FBF /* Furniture+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70D321FBD14500FF9FBF /* Furniture+CoreDataClass.swift */; };
 		4D0D70DC21FBD14500FF9FBF /* Furniture+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70D521FBD14500FF9FBF /* Furniture+CoreDataProperties.swift */; };
-		4D0D70DE21FCAA8100FF9FBF /* ParentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70DD21FCAA8100FF9FBF /* ParentTableViewController.swift */; };
 		4D0D70E021FCAAFA00FF9FBF /* FurnitureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70DF21FCAAFA00FF9FBF /* FurnitureViewController.swift */; };
 		4D0D70E321FE19A600FF9FBF /* FurnitureXibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70E121FE19A600FF9FBF /* FurnitureXibTableViewCell.swift */; };
 		4D0D70E421FE19A600FF9FBF /* FurnitureXibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D70E221FE19A600FF9FBF /* FurnitureXibTableViewCell.xib */; };
 		4D0D70E621FFA36E00FF9FBF /* AddFurnitureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D70E521FFA36E00FF9FBF /* AddFurnitureViewController.swift */; };
+		4D8A4E6D2203446300284401 /* DetailFurnitureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A4E6C2203446300284401 /* DetailFurnitureViewController.swift */; };
+		4D8A4E712209796000284401 /* RoomCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A4E702209796000284401 /* RoomCategoryViewController.swift */; };
+		4D8A4E74220A1ECC00284401 /* RoomCategoryXibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A4E72220A1ECC00284401 /* RoomCategoryXibTableViewCell.swift */; };
+		4D8A4E75220A1ECC00284401 /* RoomCategoryXibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8A4E73220A1ECC00284401 /* RoomCategoryXibTableViewCell.xib */; };
+		4D8A4E77220A433A00284401 /* AddRoomCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A4E76220A433A00284401 /* AddRoomCategoryViewController.swift */; };
+		4D8A4E7A220C5DC800284401 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A4E79220C5DC800284401 /* FilterViewController.swift */; };
+		4D8A4E7C220C5ECB00284401 /* ResultSearchFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A4E7B220C5ECB00284401 /* ResultSearchFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +49,17 @@
 		4D0D70D221FBD14500FF9FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "HomeWork-9-iOS-Core-Data/Base.lproj/Cart+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4D0D70D421FBD14500FF9FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "HomeWork-9-iOS-Core-Data/Base.lproj/Furniture+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4D0D70D621FBD14500FF9FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "HomeWork-9-iOS-Core-Data/Base.lproj/Furniture+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4D0D70DD21FCAA8100FF9FBF /* ParentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTableViewController.swift; sourceTree = "<group>"; };
 		4D0D70DF21FCAAFA00FF9FBF /* FurnitureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureViewController.swift; sourceTree = "<group>"; };
 		4D0D70E121FE19A600FF9FBF /* FurnitureXibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureXibTableViewCell.swift; sourceTree = "<group>"; };
 		4D0D70E221FE19A600FF9FBF /* FurnitureXibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FurnitureXibTableViewCell.xib; sourceTree = "<group>"; };
 		4D0D70E521FFA36E00FF9FBF /* AddFurnitureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFurnitureViewController.swift; sourceTree = "<group>"; };
+		4D8A4E6C2203446300284401 /* DetailFurnitureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFurnitureViewController.swift; sourceTree = "<group>"; };
+		4D8A4E702209796000284401 /* RoomCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCategoryViewController.swift; sourceTree = "<group>"; };
+		4D8A4E72220A1ECC00284401 /* RoomCategoryXibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCategoryXibTableViewCell.swift; sourceTree = "<group>"; };
+		4D8A4E73220A1ECC00284401 /* RoomCategoryXibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCategoryXibTableViewCell.xib; sourceTree = "<group>"; };
+		4D8A4E76220A433A00284401 /* AddRoomCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomCategoryViewController.swift; sourceTree = "<group>"; };
+		4D8A4E79220C5DC800284401 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		4D8A4E7B220C5ECB00284401 /* ResultSearchFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearchFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +94,9 @@
 			children = (
 				4D0D709C21FBC06A00FF9FBF /* TabBarViewController.swift */,
 				4D0D709E21FBC06A00FF9FBF /* Main.storyboard */,
-				4D0D70DF21FCAAFA00FF9FBF /* FurnitureViewController.swift */,
-				4D0D70E521FFA36E00FF9FBF /* AddFurnitureViewController.swift */,
-				4D0D70E121FE19A600FF9FBF /* FurnitureXibTableViewCell.swift */,
-				4D0D70E221FE19A600FF9FBF /* FurnitureXibTableViewCell.xib */,
-				4D0D70DD21FCAA8100FF9FBF /* ParentTableViewController.swift */,
+				4DFC8324220C7A88009419F0 /* Filter */,
+				4D8A4E78220B3D1900284401 /* RoomCategory */,
+				4D8A4E6F2209792200284401 /* Furniture */,
 				4D0D70BE21FBCB3600FF9FBF /* CoreData */,
 				4D0D70A421FBC06B00FF9FBF /* Assets.xcassets */,
 				4D0D709A21FBC06A00FF9FBF /* AppDelegate.swift */,
@@ -109,6 +119,38 @@
 				4D0D70D121FBD14500FF9FBF /* Cart+CoreDataProperties.swift */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		4D8A4E6F2209792200284401 /* Furniture */ = {
+			isa = PBXGroup;
+			children = (
+				4D0D70DF21FCAAFA00FF9FBF /* FurnitureViewController.swift */,
+				4D0D70E521FFA36E00FF9FBF /* AddFurnitureViewController.swift */,
+				4D8A4E6C2203446300284401 /* DetailFurnitureViewController.swift */,
+				4D0D70E121FE19A600FF9FBF /* FurnitureXibTableViewCell.swift */,
+				4D0D70E221FE19A600FF9FBF /* FurnitureXibTableViewCell.xib */,
+			);
+			name = Furniture;
+			sourceTree = "<group>";
+		};
+		4D8A4E78220B3D1900284401 /* RoomCategory */ = {
+			isa = PBXGroup;
+			children = (
+				4D8A4E702209796000284401 /* RoomCategoryViewController.swift */,
+				4D8A4E76220A433A00284401 /* AddRoomCategoryViewController.swift */,
+				4D8A4E72220A1ECC00284401 /* RoomCategoryXibTableViewCell.swift */,
+				4D8A4E73220A1ECC00284401 /* RoomCategoryXibTableViewCell.xib */,
+			);
+			path = RoomCategory;
+			sourceTree = "<group>";
+		};
+		4DFC8324220C7A88009419F0 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				4D8A4E79220C5DC800284401 /* FilterViewController.swift */,
+				4D8A4E7B220C5ECB00284401 /* ResultSearchFilterViewController.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +214,7 @@
 				4D0D70E421FE19A600FF9FBF /* FurnitureXibTableViewCell.xib in Resources */,
 				4D0D70A821FBC06B00FF9FBF /* LaunchScreen.storyboard in Resources */,
 				4D0D70A521FBC06B00FF9FBF /* Assets.xcassets in Resources */,
+				4D8A4E75220A1ECC00284401 /* RoomCategoryXibTableViewCell.xib in Resources */,
 				4D0D70A021FBC06A00FF9FBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,16 +228,21 @@
 			files = (
 				4D0D70A321FBC06A00FF9FBF /* HomeWork_9_iOS_Core_Data.xcdatamodeld in Sources */,
 				4D0D70D921FBD14500FF9FBF /* Cart+CoreDataClass.swift in Sources */,
+				4D8A4E7C220C5ECB00284401 /* ResultSearchFilterViewController.swift in Sources */,
 				4D0D709D21FBC06A00FF9FBF /* TabBarViewController.swift in Sources */,
 				4D0D709B21FBC06A00FF9FBF /* AppDelegate.swift in Sources */,
-				4D0D70DE21FCAA8100FF9FBF /* ParentTableViewController.swift in Sources */,
+				4D8A4E6D2203446300284401 /* DetailFurnitureViewController.swift in Sources */,
 				4D0D70DC21FBD14500FF9FBF /* Furniture+CoreDataProperties.swift in Sources */,
+				4D8A4E74220A1ECC00284401 /* RoomCategoryXibTableViewCell.swift in Sources */,
 				4D0D70BD21FBCA6D00FF9FBF /* CoreDataStack.swift in Sources */,
 				4D0D70E321FE19A600FF9FBF /* FurnitureXibTableViewCell.swift in Sources */,
 				4D0D70E021FCAAFA00FF9FBF /* FurnitureViewController.swift in Sources */,
 				4D0D70DA21FBD14500FF9FBF /* Cart+CoreDataProperties.swift in Sources */,
 				4D0D70D821FBD14500FF9FBF /* RoomCategory+CoreDataProperties.swift in Sources */,
+				4D8A4E7A220C5DC800284401 /* FilterViewController.swift in Sources */,
 				4D0D70D721FBD14500FF9FBF /* RoomCategory+CoreDataClass.swift in Sources */,
+				4D8A4E712209796000284401 /* RoomCategoryViewController.swift in Sources */,
+				4D8A4E77220A433A00284401 /* AddRoomCategoryViewController.swift in Sources */,
 				4D0D70E621FFA36E00FF9FBF /* AddFurnitureViewController.swift in Sources */,
 				4D0D70DB21FBD14500FF9FBF /* Furniture+CoreDataClass.swift in Sources */,
 			);

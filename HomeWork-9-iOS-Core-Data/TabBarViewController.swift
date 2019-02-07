@@ -31,6 +31,7 @@ class TabBarViewController: UITabBarController {
 
     @objc private func addAction(_ sender: UIBarButtonItem) {
         (selectedViewController as? FurnitureViewController)?.addAction()
+        (selectedViewController as? RoomCategoryViewController)?.addAction()
     }
 }
 
